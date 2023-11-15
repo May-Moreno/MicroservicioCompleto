@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="imagenes/Sonrisa_2.png">
+	<title>SonriSana</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="margin: 0; background-color: #daeded; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+	<nav class=class="navbar navbar-expand-lg navbar-lg " style="background-color: #64b4a0">
+		<img class="sonrisa" src="imagenes/Sonrisa_2.png" style="width: 50px; margin: 20px;">
+		<a class="navbar-brand" href="" style="color: black;">SonriSana</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+<a class="nav-link" href="/" style="color: black; cursor: pointer;">Home <span class="sr-only">(current)</span></a>				</li>
+			</ul>
+			<img class="sonrisa" src="imagenes/sonrisa.png">
+		</div>
+	</nav>
+
+	<div class="container text-center">
+		<div>
+			<h1>Tabla de citas</h1>
+		</div>
+		<br>
+		<div>
+			<table class="table table-striped table-dark">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Fecha de la cita</th>
+						<th>Hora de la cita</th>
+						<th>Nombre del paciente</th>
+						<th>Telefono del paciente</th>
+						<th>Primera cita</th>
+						<th>Proposito de la cita</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="Citas : ${listaCitas}">
+						<td th:text="${Citas.id}"></td>
+						<td th:text="${Citas.fecha}"></td>
+						<td th:text="${Citas.hora}"></td>
+						<td th:text="${Citas.paciente}"></td>
+						<td th:text="${Citas.telefono}"></td>
+						<td th:text="${Citas.p_cita}"></td>
+						<td th:text="${Citas.pro_cita}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="new">
+			<a th:href="@{/citas/nueva}">
+			<button class="btnNew" style="margin: 20px; background-color: #008080; color: white; border-radius: 5px; cursor: pointer; height: 50px; width: 200px; font-size: 1.2rem">Agregar cita</button>
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>

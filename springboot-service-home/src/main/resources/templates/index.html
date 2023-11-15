@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="imagenes/Sonrisa_2.png">
+	<title>SonriSana</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+
+<body style="margin: 0; background-color: #daeded; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+	<nav class="navbar navbar-expand-lg navbar-lg " style="background-color: #64b4a0">
+		<img class="sonrisa" src="imagenes/Sonrisa_2.png" style="width: 50px; margin: 20px;">
+		<a class="navbar-brand" href="" style="color: black; cursor: pointer;">SonriSana</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/" style="color: black; cursor: pointer;">Home <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="prince">
+		<div class="container text-cemter" style="justify-content: center; display: flex">
+			<hi style="color:black; text-align: center; font-size: 2rem">Bienvenido a SonriSana</hi>
+		</div>
+		<div style="justify-content: center; display: flex">
+			<a href="http://localhost:8011/citas">
+				<button class="cita" style="margin: 20px; background-color: #008080; color: white; border-radius: 5px; cursor: pointer; height: 50px; width: 200px; font-size: 1.2rem;">Agendar cita</button>
+			</a>
+			<a href="http://localhost:8010/pacientes">
+			<button class="paciente" style="margin: 20px; background-color: #008080; color: white; border-radius: 5px; cursor: pointer; height: 50px; width: 200px; font-size: 1.2rem">Archivo pacientes</button>
+			</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+package com.formacbionbdi.springboot.app.home;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringbootServiceHomeApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

@@ -1,0 +1,2 @@
+INSERT INTO citas (fecha, hora, paciente, telefono, p_cita, pro_cita) VALUES ('2023-11-20', '16:30:00', 'Mayra Moreno', '9613639541', 'Si', 'Revision')
+INSERT INTO citas (fecha, hora, paciente, telefono, p_cita, pro_cita) VALUES ('2023-11-15', '13:30:00', 'Elizabeth Velasquez', '9611242964', 'No', 'Seguimiento')
